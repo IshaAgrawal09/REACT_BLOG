@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  background-color: rgb(49, 49, 49);
+  color: white;
+}
+.heading {
+  text-align: center;
+  padding: 4%;
+}
+hr {
+  width: 80%;
+  margin: auto;
+  color: rgb(177, 175, 175);
+}
+.heading h1 {
+  font-family: "El Messiri", sans-serif;
+}
+.nav {
+  padding: 4%;
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+.nav a {
+  text-decoration: none;
+  color: gray;
+  font-size: 16px;
+  font-weight: 500;
+}
+.nav a:hover {
+  color: white;
+}
+.imageHeader {
+  width: 80%;
+  margin: auto;
+  height: 70vh;
+  padding: 10% 0;
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/06/00/26/people-2587059__340.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.headerContent {
+  padding: 10% 5%;
+  width: 55%;
+}
+.headerContent button {
+  color: white;
+  background-color: rgb(85, 157, 250);
+  border: none;
+  padding: 0.5% 1%;
+  margin: 2% 0;
+}
+#logout {
+  border: none;
+  color: gray;
+  background-color: rgb(49, 49, 49);
+  font-size: 16px;
+  font-weight: 600;
+}
+#logout:hover {
+  color: white;
+}
+@media (max-width: 780px) {
+  hr {
+    width: 90%;
+  }
+  .nav {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .imageHeader {
+    width: 95%;
+    margin: auto;
+    height: 60vh;
+  }
+  .headerContent {
+    padding: 10% 5%;
+    width: 60%;
+  }
+  .headerContent h1 {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.showPost {
+  
+  width: 80%;
+  margin: 10% auto;
+}
+.singlePost1{
+
+  margin: 1% 2% 1%;
+  cursor: pointer;
+  width: 45%;
+  float: left;
+  border: 1px solid #eee;
+}
+.singlePost2{
+  margin: 1% 2% 1%;
+  cursor: pointer;
+  width: 45%;
+  float: right;
+  border: 1px solid #eee;
+}
+.postImage {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.postImage img {
+  /* margin-top: 8px; */
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  height: 320px;
+  
+}
+.postImage img:hover{
+    transform: scale(1);
+  transition: 0.3s;
+}
+.singlePost1 h2 ,.singlePost2 h2 {
+  text-align: center;
+  font-family: "Uchen", serif;
+  margin: 10% 6%;
+}
+.singlePost1 p, .singlePost2 p {
+  margin: 10% 6%;
+  align-items: justify;
+  color: gray;
+  line-height: 1.5;
+  font-family: "Raleway", sans-serif;
+  
+}
+#blogType {
+    margin: 0;
+    /* margin-bottom:5%; */
+    color: rgb(18, 18, 206);
+}
+.postIcon{
+    margin: 10% 6%;
+   
+    display: flex;
+    justify-content: space-between;
+}
+.postIcon div a{
+    color: black;
+    font-size: 14px;
+    margin-right: 20%;
+}
+.postIcon div{
+    width: 14%;
+}
+.postIcon div button{
+    border: none;
+    color: rgb(129, 16, 16);
+}
+
+@media (max-width:780px){
+  .showPost{
+    width: 90%;
+  }
+  .singlePost1{
+
+    margin: 1% 2% 1%;
+    cursor: pointer;
+    width: 90%;
+    float: unset;
+    border: 1px solid #eee;
+  }
+  .singlePost2{
+    margin: 1% 2% 1%;
+    cursor: pointer;
+    width: 90%;
+    float: unset;
+    border: 1px solid #eee;
+  }
+
+}
