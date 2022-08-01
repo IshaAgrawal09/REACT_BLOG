@@ -13,6 +13,8 @@
 }
 hr {
   width: 80%;
+  height: 3px;
+  background-color: rgb(177, 175, 175);
   margin: auto;
   color: rgb(177, 175, 175);
 }
@@ -28,7 +30,7 @@ hr {
 }
 .nav a {
   text-decoration: none;
-  color: gray;
+  color: rgb(175, 173, 173);
   font-size: 16px;
   font-weight: 500;
 }
@@ -57,7 +59,7 @@ hr {
 }
 #logout {
   border: none;
-  color: gray;
+  color: rgb(175, 173, 173);
   background-color: rgb(49, 49, 49);
   font-size: 16px;
   font-weight: 600;

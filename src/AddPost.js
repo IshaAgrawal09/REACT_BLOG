@@ -23,7 +23,7 @@ const AddPost = () => {
   };
 
   const upload = () => {
-    if (title == "" || content == "" || image == "" || type == "") {
+    if (title === "" || content === "" || image === "" || type == "") {
       setError("Fields can't be Empty!");
     } else {
       setAddPostArr([
@@ -44,16 +44,15 @@ const AddPost = () => {
       setImage("");
       setType("");
       alert("Blog Uploaded Successfully!");
+      navigate("/");
     }
-    navigate("/");
   };
   // console.log(addPostArr);
   // console.log(addPostCount);
 
   return !loggedIn ? (
-     <Signin />
-   ) : (
-   (
+    <Signin />
+  ) : (
     <div className="addPostMain">
       <h2>ADD POST</h2>
       <div className="addPost">
@@ -99,13 +98,12 @@ const AddPost = () => {
           />
         </div>
         <div className="showBlogImage">
-            <img src={image} alt=''/>
+          <img src={image} alt="" />
         </div>
 
         <button onClick={upload}>UPLOAD</button>
       </div>
     </div>
-  )
   );
 };
 

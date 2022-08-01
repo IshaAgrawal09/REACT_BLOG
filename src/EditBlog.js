@@ -4,7 +4,7 @@ import CartContext from "./Context";
 import { useContext } from "react";
 
 const EditBlog = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   let { id } = useParams();
   const { addPostArr, setAddPostArr } = useContext(CartContext);
   const [title, setTitle] = useState(addPostArr[id]["title"]);
@@ -17,24 +17,22 @@ const EditBlog = () => {
     setImage(image);
   };
 
-   const update = () => {
-      
-       setAddPostArr(addPostArr.filter((item,index) => {
-      if (id == index) {
-        item.title = title;
-        item.content = content;
-        item.type = type;
-        item.image = image;
+  const update = () => {
+    setAddPostArr(
+      addPostArr.filter((item, index) => {
+        if (id == index) {
+          item.title = title;
+          item.content = content;
+          item.type = type;
+          item.image = image;
 
+          return item;
+        }
         return item;
-      }
-      return item;
-    })
-    
-    )
+      })
+    );
     navigate("/");
-    };
-   
+  };
 
   console.log(addPostArr);
   return (

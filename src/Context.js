@@ -15,7 +15,7 @@ export function CartProvider({ children }) {
         setUserArr,
         loggedIn,
         setLoggedIn,
-        count,
+        count,  
         setCount,
         addPostArr,
         setAddPostArr,
